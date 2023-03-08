@@ -21,6 +21,12 @@ Route::get('about', [HomeController::class, 'about']
 );
 
 
+Route::get('login', [HomeController::class, 'login'] 
+);
+
+Route::get('dashboard', [HomeController::class, 'dash'] 
+);
+
 // Route::get('about', function () {
 //     return view('about');
 // });
