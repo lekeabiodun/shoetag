@@ -12,27 +12,36 @@
 
 <body>
     <div class="container-fluid">
-        <div class="sidenav"></div>
+        <div class="sidenav pt-4 pl-3">
+            <img src="{{ url('img/logo.jpg') }}" alt="">
+            <a href="#">Dashboard</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#"></a>
+            <button class="dropdown-btn">Dropdown 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <div class="dropdown-contain">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+
+                </div>
+            </div>
+        </div>
         <div class="body-container">
             <nav class="navbar navbar-expand-sm bg-white navbar-dark">
                 <!-- Brand/logo -->
-                <a class="navbar-brand text-dark" href="#">Logo</a>
+                <a class="navbar-brand text-dark" href="#">DASHBOARD</a>
 
-                <!-- Links -->
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link 1</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link 2</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link 3</a>
-                    </li>
-                </ul>
             </nav>
+            <div class="body-page">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, accusantium in! Nulla
+                sit expedita impedit? Illum quasi ea magnam. Quos facilis quae mollitia magnam blanditiis dignissimos
+                perspiciatis aliquid necessitatibus. Reprehenderit!</div>
         </div>
     </div>
+<script src="{{ ('js/main.js') }}"></script>
 </body>
 
 </html>
