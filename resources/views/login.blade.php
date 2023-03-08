@@ -18,13 +18,13 @@
                     <input type="password" name="pass" id="pass" placeholder="Password" class="mt-3">
                     <button type="submit" class="btn btn-primary mt-3">Login</button>
                     <div class="other">
-                        <p class="mt-2 sign-text">Already have an account <a href="#" style="text-decoration: none;">SIGN IN</a> </p>
-                        <a href="#" class="" style="text-decoration: none;">Forgotten Password</a>
+                        <p class="mt-2 sign-text">Already have an account <a href="#">SIGN IN</a> </p>
+                        <a href="#" class="forgotten">Forgotten Password</a>
                     </div>
                     <div class="login-line m-3">
-                        <hr class="mr-3" style="width:150px;">
+                        <hr class="mr-3">
                         <div class="login-or">OR</div>
-                        <hr class="ml-3" style="width:150px;">
+                        <hr class="ml-3">
                     </div>
                 </form>
             </div>

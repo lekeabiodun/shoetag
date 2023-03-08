@@ -32,13 +32,10 @@
         </div>
         <div class="body-container">
             <nav class="navbar navbar-expand-sm bg-white navbar-dark">
-                <!-- Brand/logo -->
                 <a class="navbar-brand text-dark" href="#">DASHBOARD</a>
 
             </nav>
-            <div class="body-page">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, accusantium in! Nulla
-                sit expedita impedit? Illum quasi ea magnam. Quos facilis quae mollitia magnam blanditiis dignissimos
-                perspiciatis aliquid necessitatibus. Reprehenderit!</div>
+            <div class="body-page"></div>
         </div>
     </div>
 <script src="{{ ('js/main.js') }}"></script>
