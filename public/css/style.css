@@ -30,3 +30,44 @@
 {
     font-weight: 600;
 }
+.about-head
+{
+    font-weight: 600;
+    color: red;
+    animation: mmove 5s infinite;
+    
+}
+@keyframes mmove {
+    25% {
+        color: rgb(0, 255, 55);        
+    }
+    50% {
+        color: blue;        
+    }
+    75% {
+        color: rgb(111, 0, 255);        
+    }
+}
+.btn
+{
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    outline: none;
+    border: none;
+    color: black;
+    font-weight: 600;
+}
+.btn:hover
+{
+    background-color: white;
+    outline: none;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: rgb(9, 5, 253);
+    font-weight: 600;
+}
+.image-section img
+{
+    width: 190px;
+}
