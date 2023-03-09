@@ -33,6 +33,11 @@
         <div class="body-container">
             <nav class="navbar navbar-expand-sm bg-white navbar-dark">
                 <a class="navbar-brand text-dark" href="#">DASHBOARD</a>
+                <div class="profile ml-auto">
+                    <div class="profile-image">
+                        <img src="{{ url('img/shoe.png') }}" alt="">
+                    </div>
+                </div>
 
             </nav>
             <div class="body-page"></div>
