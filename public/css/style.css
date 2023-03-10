@@ -4,12 +4,70 @@
     padding: 0;
     font-family: sans-serif;
 }
-.container-fluid
+.navbar
 {
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2), 0 5px 12px 0 rgba(0, 0, 0, 0.19);
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    padding: 15px 8px 15px 20px;
+
+}
+.navbar-brand
+{
+    font-family: cursive;
+    font-size: x-large;
+    font-weight: 600;
+}
+.navbar-nav .nav-link
+{
+    color: brown;
+    font-family: fantasy;
+}
+.login-botton .btn
+{
+    color: white;
+    font-weight: bolder;
+}
+
+/***************************** homepage *****************************/
+.homepage-body
+{
+    background-image: url(../img/Download\ Seamless\ Pattern\ with\ Sneaker\ Shoe\ Flat\ Line\ Stroke\ Icon\ for\ free.jfif);
+    background-repeat: no-repeat;
+    /* /* width: 100%; */
+    height: 80vh;
+    background-size: 100% 100%;
     display: grid;
     place-content: center;
     place-items: center;
-    background-color: #f2f2f2;
-    width: 100%;
-    height: 100vh;
+}
+.homepage-body h1
+{
+    color: #2a27ec;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.homepage-body p
+{
+    font-size: xx-large;
+    font-weight: 600;
+    color: #3023ec;
+}
+
+
+
+/* footer */
+footer
+{
+    text-align: center;
+    bottom: 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: #828bb2;
+}
+.footer a
+{
+    text-decoration: none;
 }
