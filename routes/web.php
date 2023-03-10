@@ -14,19 +14,25 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', [HomeController::class, 'home'] 
-);
-
-Route::get('about', [HomeController::class, 'about'] 
-);
-
-
-Route::get('login', [HomeController::class, 'login'] 
+Route::get('/', [HomeController::class, 'index'] 
 );
 
 Route::get('contact', [HomeController::class, 'contact'] 
 );
 
+Route::get('about', [HomeController::class, 'about'] 
+);
+
+Route::get('login', [HomeController::class, 'login'] 
+);
+
+// DASHBOARD
+
+Route::get('dashboard', [HomeController::class, 'dashboard'] 
+);
+
+Route::get('dashboard/table', [HomeController::class, 'dashtable'] 
+);
 
 // Route::get('about', function () {
 //     return view('about');

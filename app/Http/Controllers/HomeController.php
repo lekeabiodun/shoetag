@@ -6,23 +6,33 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function home()
+    public function index()
     {
-        return view('dashboard');
+        return view('pages.index');
+    }
+    
+    public function contact()
+    {
+        return view('pages.contact');
     }
 
     public function about()
     {
-        return view('about');
+        return view('pages.about');
     }
 
     public function login()
     {
-        return view('login');
+        return view('loginpage.login');
     }
 
-    public function contact()
+    public function dashboard()
     {
-        return view('contact');
+        return view('dashboard.dashboard');
+    }
+
+    public function dashtable()
+    {
+        return view('dashboard.table');
     }
 }

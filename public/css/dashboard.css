@@ -5,7 +5,7 @@
 }
 
 body {
-    overflow-x: auto;
+    overflow-x: hidden;
     background-color: #f2f2f2;
 }
 
@@ -15,6 +15,7 @@ body {
     width: 100%;
 }
 
+/************************************* DASHBOARD ***********************************/
 /********** sidenav **********/
 .sidenav {
     display: flex;
@@ -186,6 +187,62 @@ body {
 .inner-box h4
 {
     font-weight: bolder;
+}
+
+/************************************* CONTACT ***********************************/
+.contact-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fafafa; */
+    width: 80%;
+    width: 100%;
+    height: 70vh;
+}
+.text-box 
+{
+    height: 63vh;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2), 0 5px 12px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px;
+
+}
+.fill-contact label
+{
+    font-size: 0.7rem;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fill-contact input, 
+.fill-contact textarea
+{
+    border: none;
+    outline: none;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 6px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+.fill-contact input::placeholder
+{
+    
+}
+.fill-space
+{
+
+}
+input, textarea
+{
+    width: 100%;
+}
+.info-box
+{
+    height: 70vh;
+    border-radius: 7px;
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2), 0 5px 12px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 /* footer */
