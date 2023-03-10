@@ -8,7 +8,7 @@ class HomeController extends Controller
 {
     public function home()
     {
-        return view('home');
+        return view('dashboard');
     }
 
     public function about()
@@ -21,8 +21,8 @@ class HomeController extends Controller
         return view('login');
     }
 
-    public function dash()
+    public function contact()
     {
-        return view('dashboard');
+        return view('contact');
     }
 }

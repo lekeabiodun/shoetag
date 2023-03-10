@@ -1,49 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
-    <title>DASHBOARD</title>
-</head>
-
-<body>
-    <div class="container-fluid">
-        <div class="sidenav pt-4 pl-3">
-            <img src="{{ url('img/logo.jpg') }}" alt="">
-            <a href="#">Dashboard</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            <a href="#"></a>
-            <button class="dropdown-btn">Dropdown 
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <div class="dropdown-contain">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-
-                </div>
+@section('content')
+<div class="body-page">
+    <div class="upper-body row container">
+        <div class="f-col col-sm-12 col-md-6 col-xl-6">
+            <div class="inner-box mt-3">
+                <h4>Total Income</h4>
+                <h1>$123,000</h1>
+                <h6>Saved 25%</h6>
             </div>
         </div>
-        <div class="body-container">
-            <nav class="navbar navbar-expand-sm bg-white navbar-dark">
-                <a class="navbar-brand text-dark" href="#">DASHBOARD</a>
-                <div class="profile ml-auto">
-                    <div class="profile-image">
-                        <img src="{{ url('img/shoe.png') }}" alt="">
-                    </div>
-                </div>
-
-            </nav>
-            <div class="body-page"></div>
+        <div class="f-col col-sm-12 col-md-6 col-xl-6 ">
+            <div class="inner-box mt-3">
+                <h4>Total Expences</h4>
+                <h1>$123,000</h1>
+                <h6>Saved 25%</h6>
+            </div>
+        </div>
+        <div class="f-col col-sm-12 col-md-6 col-xl-6 ">
+            <div class="inner-box mt-3">
+                <h4>Cash on Hand</h4>
+                <h1>$123,000</h1>
+                <h6>Saved 25%</h6>
+            </div>
+        </div>
+        <div class="f-col col-sm-12 col-md-6 col-xl-6 ">
+            <div class="inner-box mt-3">
+                <h4>Net Profit Margin</h4>
+                <h1>$123,000</h1>
+                <h6>Saved 25%</h6>
+            </div>
         </div>
     </div>
-<script src="{{ ('js/main.js') }}"></script>
-</body>
 
-</html>
+</div>
+@endsection
