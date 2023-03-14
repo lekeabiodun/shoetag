@@ -1,0 +1,78 @@
+.container-fluider
+{
+    background-color: #000;
+    height: 75vh;
+}
+.about-text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    padding: 0px 40px ;
+    /* background-color: #f2f2f2; */
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+.about-text p
+{
+    padding: 0;
+    margin: 0;
+}
+.about-text h1
+{
+    font-weight: 900;
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+    color: red;
+    animation: mmove 5s infinite;
+}
+.about-text h3
+{
+    font-weight: 600;
+}
+.about-icons
+{
+    display: flex;
+    gap: 1em;
+}
+.about-con
+{
+    width: 25px;
+    height: 25px;
+    background-color: none;
+    border: 2px #fff solid;
+    border-radius: 5px;
+}
+.about-button
+{
+    width: 20%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.about-img
+{
+    display: grid;
+    place-items: center;
+    /* background-color: blueviolet; */
+}
+.img-container
+{
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    background-color: #ffffff;
+}
+
+@keyframes mmove {
+    25% {
+        color: rgb(0, 255, 55);        
+    }
+    50% {
+        color: blue;        
+    }
+    75% {
+        color: rgb(111, 0, 255);        
+    }
+}

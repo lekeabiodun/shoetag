@@ -21,7 +21,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 20%;
-    height: 100vh;
+    height: 100%;
     background-color: #ffffff;
     position: fixed;
     z-index: 10;
@@ -31,13 +31,7 @@ body {
 
 }
 
-.sidenav img {
-    width: 200px;
-    margin-top: 20px;
-
-}
-.side-nav-text
-{
+.side-nav-text {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
@@ -51,9 +45,16 @@ body {
     font-size: 1rem;
     border: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transition: 10s ;
+    transition: 0.8s;
 }
 
+
+.sidenav-header {
+    font-family: cursive;
+    font-size: xx-large;
+    font-weight: 600;
+    color: black;
+}
 .sidenav .dropdown-btn {
     text-decoration: none;
     font-size: 1rem;
@@ -67,12 +68,13 @@ body {
     text-align: left;
     cursor: pointer;
     outline: none;
-    /* transition-timing-function: ease-in-out; */
 }
 
-.sidenav a:hover,
+.side-nav-text a:hover{
+    color: #000000;
+}
 .dropdown-btn:hover {
-    color: #2b2323;
+    color: #000000;
 }
 
 .active {
@@ -83,6 +85,7 @@ body {
 .dropdown-container {
     display: none;
     margin-top: 10px;
+    transition: 0.8s;
     background-color: #fafafa;
     padding-left: 8px;
     width: 90%;
@@ -120,7 +123,7 @@ body {
 
 /********** navbar *************/
 .navbar {
-    margin-top: 5px;
+    /* margin-top: 5px; */
     position: sticky;
     top: 0;
     z-index: 5;
@@ -132,17 +135,17 @@ body {
     font-weight: 600;
     font-size: x-large;
 }
-.profile-image
-{
+
+.profile-image {
     border-radius: 100%;
     width: 100%;
     height: 100%;
     background-color: red;
     border: 2px solid blue;
-    
+
 }
-.profile-image img
-{
+
+.profile-image img {
     width: 60px;
     height: 60px;
     border-radius: 100%;
@@ -154,12 +157,12 @@ body {
     margin-top: 20px;
     width: 100%;
 }
-.f-col
-{
+
+.f-col {
     /* background-color: red; */
 }
-.inner-box
-{
+
+.inner-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -172,89 +175,17 @@ body {
     margin-left: 20px;
     padding: 50px 10px 50px 30px;
 }
-.inner-box:hover
-{
+
+.inner-box:hover {
     box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2), 0 5px 12px 0 rgba(0, 0, 0, 0.19);
     transition: 0.6s;
 
 }
 
-.inner-box h1
-{
+.inner-box h1 {
     font-weight: 800;
 }
 
-.inner-box h4
-{
+.inner-box h4 {
     font-weight: bolder;
-}
-
-/************************************* CONTACT ***********************************/
-.contact-box
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: #fafafa; */
-    width: 80%;
-    width: 100%;
-    height: 70vh;
-}
-.text-box 
-{
-    height: 63vh;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2), 0 5px 12px 0 rgba(0, 0, 0, 0.19);
-    padding: 30px;
-
-}
-.fill-contact label
-{
-    font-size: 0.7rem;
-    font-weight: 600;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.fill-contact input, 
-.fill-contact textarea
-{
-    border: none;
-    outline: none;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 6px 0 rgba(0, 0, 0, 0.19);
-    background-color: #fff;
-    border-radius: 4px;
-    padding: 2px 4px;
-}
-.fill-contact input::placeholder
-{
-    
-}
-.fill-space
-{
-
-}
-input, textarea
-{
-    width: 100%;
-}
-.info-box
-{
-    height: 70vh;
-    border-radius: 7px;
-    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2), 0 5px 12px 0 rgba(0, 0, 0, 0.19);
-
-}
-
-/* footer */
-footer
-{
-    text-align: center;
-    bottom: 0;
-    font-size: 14px;
-    font-weight: 300;
-    color: #828bb2;
-}
-.footer a
-{
-    text-decoration: none;
 }

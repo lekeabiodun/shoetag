@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/all.css') }}">
     <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     <title>DASHBOARD</title>
 </head>
 
@@ -15,14 +16,14 @@
     <div class="container-fluid">
         <div class="sidenav pt-4 pl-3">
             <a href="{{ asset('/') }}">
-                <img src="{{ url('img/logo.jpg') }}" alt="">
+                <h2 class="sidenav-header">SHOETAGS</h2>
             </a>
             <div class="side-nav-text">
                 <a href="{{ asset('/dashboard') }}"><i class="fa-solid fa-house mr-2"></i>Dashboard</a>
-                <a href="{{ asset('/dashboard/table') }}">Table</a>
-                <a href="{{ asset('/dashbord/application') }}">Application</a>
+                <a href="{{ asset('/dashboard/table') }}"><i class="fa-solid fa-house mr-2"></i>Table</a>
+                <a href="{{ asset('/dashbord/application') }}"><i class="fa-solid fa-house mr-2"></i>Application</a>
                 <a href="#"></a>
-                <button class="dropdown-btn">Page
+                <button class="dropdown-btn"><i class="fa-solid fa-house mr-2"></i>Page
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-container">
@@ -33,7 +34,7 @@
 
                     </div>
                 </div>
-                <a href="#">Contact</a>
+                <a href="#"><i class="fa-solid fa-house mr-2"></i>Contact</a>
             </div>
         </div>
         <div class="body-container">
@@ -46,12 +47,15 @@
                 </div>
 
             </nav>
-                @yield('content')
+            @yield('content')
             <footer class="mt-4 footer">
-               <p>2023 © Influence - Designed by <a href="#">Smith</a></p> 
+                <p>2023 © Influence - Designed by <a href="#">Smith</a></p>
             </footer>
         </div>
     </div>
+    <script src="{{ ('js/jquery.min.js') }}"></script>
+    <script src="{{ ('js/popper.min.js') }}"></script>
+    <script src="{{ ('js/bootstrap.min.js') }}"></script>
     <script src="{{ ('js/all.js') }}"></script>
     <script src="{{ ('js/main.js') }}"></script>
 </body>

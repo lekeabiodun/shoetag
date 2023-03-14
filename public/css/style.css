@@ -1,11 +1,14 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-.navbar
+body
 {
+    overflow-x: hidden;
+}
+
+.navbar {
     box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2), 0 5px 12px 0 rgba(0, 0, 0, 0.19);
     position: sticky;
     top: 0;
@@ -13,61 +16,39 @@
     padding: 15px 8px 15px 20px;
 
 }
-.navbar-brand
-{
+
+.navbar-brand {
     font-family: cursive;
     font-size: x-large;
     font-weight: 600;
 }
-.navbar-nav .nav-link
+.navbar-toggler
 {
+    outline: none;
+}
+.navbar-nav .nav-link {
     color: brown;
     font-family: fantasy;
 }
-.login-botton .btn
-{
+
+.login-botton .btn {
     color: white;
     font-weight: bolder;
 }
 
+@media screen and (max-width: 991px) {
+
+    .login-botton .btn {
+        width: 50%;
+        margin: 10px 0px 10px 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+    
+    .login-botton .btn {
+        width: 100%;
+        margin: 20px 0px 10px 0px;
+    }
+}
+
 /***************************** homepage *****************************/
-.homepage-body
-{
-    background-image: url(../img/Download\ Seamless\ Pattern\ with\ Sneaker\ Shoe\ Flat\ Line\ Stroke\ Icon\ for\ free.jfif);
-    background-repeat: no-repeat;
-    /* /* width: 100%; */
-    height: 80vh;
-    background-size: 100% 100%;
-    display: grid;
-    place-content: center;
-    place-items: center;
-}
-.homepage-body h1
-{
-    color: #2a27ec;
-    font-size: 4rem;
-    font-weight: 900;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.homepage-body p
-{
-    font-size: xx-large;
-    font-weight: 600;
-    color: #3023ec;
-}
-
-
-
-/* footer */
-footer
-{
-    text-align: center;
-    bottom: 0;
-    font-size: 14px;
-    font-weight: 300;
-    color: #828bb2;
-}
-.footer a
-{
-    text-decoration: none;
-}

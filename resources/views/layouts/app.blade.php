@@ -8,17 +8,19 @@
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/all.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    @yield('csstyle')
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     <title>Shoe Industry</title>
 </head>
 
 <body>
     <div class="">
-        <nav class="navbar navbar-expand-md bg-light navbar-light">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light">
             <!-- Brand -->
             <a class="navbar-brand" href="#">SHOETAGS</a>
 
             <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="outline: none;">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -26,24 +28,28 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">HOME</a>
+                        <a class="nav-link" href="{{ asset('/') }}">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">SERVICES</a>
+                        <a class="nav-link" href="{{ asset('/servcie') }}">SERVICES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">BLOG</a>
+                        <a class="nav-link" href="{{ asset('/blog') }}">BLOG</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">ABOUT</a>
+                        <a class="nav-link" href="{{ asset('/about') }}">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
+                        <a class="nav-link" href="{{ asset('/contact') }}">CONTACT</a>
                     </li>
                 </ul>
                 <div class="login-botton ml-auto">
-                    <button class="btn btn-primary">Login</button>
-                    <button class="btn btn-warning">Sign Up</button>
+                    <a href="{{ asset('/login') }}">
+                        <button class="btn btn-primary">Login</button>
+                    </a>
+                    <a href="#">
+                        <button class="btn btn-warning">Sign Up</button>
+                    </a>
                 </div>
             </div>
         </nav>
