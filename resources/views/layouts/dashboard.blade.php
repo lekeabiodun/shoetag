@@ -14,14 +14,15 @@
 
 <body>
     <div class="container-fluid">
-        <div class="sidenav pt-4 pl-3">
-            <a href="{{ asset('/') }}">
+        <div id="mySidenav" class="sidenav pt-4 pl-3">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="{{ asset('/dashboard') }}">
                 <h2 class="sidenav-header">SHOETAGS</h2>
             </a>
             <div class="side-nav-text">
                 <a href="{{ asset('/dashboard') }}"><i class="fa-solid fa-house mr-2"></i>Dashboard</a>
-                <a href="{{ asset('/dashboard/table') }}"><i class="fa-solid fa-house mr-2"></i>Table</a>
-                <a href="{{ asset('/dashbord/application') }}"><i class="fa-solid fa-house mr-2"></i>Application</a>
+                <a href="{{ asset('/table') }}"><i class="fa-solid fa-house mr-2"></i>Table</a>
+                <a href="{{ asset('/application') }}"><i class="fa-solid fa-house mr-2"></i>Application</a>
                 <a href="#"></a>
                 <button class="dropdown-btn"><i class="fa-solid fa-house mr-2"></i>Page
                     <i class="fa fa-caret-down"></i>
@@ -39,7 +40,8 @@
         </div>
         <div class="body-container">
             <nav class="navbar navbar-expand-sm bg-white navbar-dark">
-                <a class="navbar-brand text-dark" href="#">DASHBOARD</a>
+                <span class="slide-show-button mr-1" onclick="openNav()">&#9776;</span>
+                @yield('table')
                 <div class="profile ml-auto">
                     <div class="profile-image">
                         <img src="{{ url('img/shoe.png') }}" alt="">
@@ -53,10 +55,12 @@
             </footer>
         </div>
     </div>
+
     <script src="{{ ('js/jquery.min.js') }}"></script>
     <script src="{{ ('js/popper.min.js') }}"></script>
     <script src="{{ ('js/bootstrap.min.js') }}"></script>
     <script src="{{ ('js/all.js') }}"></script>
+    <script src="{{ ('js/slider.js') }}"></script>
     <script src="{{ ('js/main.js') }}"></script>
 </body>
 

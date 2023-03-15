@@ -31,7 +31,7 @@ Route::get('login', [HomeController::class, 'login']
 Route::get('dashboard', [HomeController::class, 'dashboard'] 
 );
 
-Route::get('dashboard/table', [HomeController::class, 'dashtable'] 
+Route::get('table', [HomeController::class, 'table'] 
 );
 
 // Route::get('about', function () {

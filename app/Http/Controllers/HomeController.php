@@ -31,7 +31,7 @@ class HomeController extends Controller
         return view('dashboard.dashboard');
     }
 
-    public function dashtable()
+    public function table()
     {
         return view('dashboard.table');
     }

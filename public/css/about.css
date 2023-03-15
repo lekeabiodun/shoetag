@@ -1,27 +1,26 @@
-.container-fluider
-{
+.container-fluider {
     background-color: #000;
     height: 75vh;
 }
-.about-text
-{
+
+.about-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: left;
     text-align: left;
-    padding: 0px 40px ;
+    padding: 0px 40px;
     /* background-color: #f2f2f2; */
     color: #fff;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.about-text p
-{
+
+.about-text p {
     padding: 0;
     margin: 0;
 }
-.about-text h1
-{
+
+.about-text h1 {
     font-weight: 900;
     font-size: 4rem;
     margin: 0;
@@ -29,36 +28,43 @@
     color: red;
     animation: mmove 5s infinite;
 }
-.about-text h3
-{
+
+.about-text h3 {
     font-weight: 600;
 }
-.about-icons
-{
+
+.about-icons {
     display: flex;
     gap: 1em;
 }
-.about-con
-{
+
+.about-con {
+    display: grid;
+    place-items: center;
     width: 25px;
     height: 25px;
     background-color: none;
     border: 2px #fff solid;
     border-radius: 5px;
 }
-.about-button
-{
-    width: 20%;
+
+.about-con:hover {
+    border: 2px rgb(47, 0, 255) solid;
+    color: rgb(17, 0, 255);
+}
+
+.about-button {
+    width: 100px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.about-img
-{
+
+.about-img {
     display: grid;
     place-items: center;
     /* background-color: blueviolet; */
 }
-.img-container
-{
+
+.img-container {
     width: 350px;
     height: 350px;
     border-radius: 100%;
@@ -67,12 +73,53 @@
 
 @keyframes mmove {
     25% {
-        color: rgb(0, 255, 55);        
+        color: rgb(0, 255, 55);
     }
+
     50% {
-        color: blue;        
+        color: blue;
     }
+
     75% {
-        color: rgb(111, 0, 255);        
+        color: rgb(111, 0, 255);
     }
+}
+
+@media screen and (max-width: 991px) {
+
+    .img-container {
+        width: 250px;
+        height: 250px;
+        border-radius: 100%;
+        background-color: #ffffff;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .container-fluider {
+        height: 100%;
+        padding: 15px 0px 25px 0px;
+    }
+
+    .img-container {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .about-text h1 {
+        font-weight: 900;
+        font-size: 3rem;
+    }
+
+    .about-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-text p {
+        font-size: 0.8rem;
+    }
+
 }

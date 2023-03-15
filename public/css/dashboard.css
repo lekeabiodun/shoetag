@@ -31,6 +31,11 @@ body {
 
 }
 
+.sidenav .closebtn {
+    display: none;
+    transition-delay: 2s;
+}
+
 .side-nav-text {
     display: flex;
     flex-direction: column;
@@ -55,6 +60,7 @@ body {
     font-weight: 600;
     color: black;
 }
+
 .sidenav .dropdown-btn {
     text-decoration: none;
     font-size: 1rem;
@@ -70,9 +76,10 @@ body {
     outline: none;
 }
 
-.side-nav-text a:hover{
+.side-nav-text a:hover {
     color: #000000;
 }
+
 .dropdown-btn:hover {
     color: #000000;
 }
@@ -114,7 +121,6 @@ body {
 
 
 
-
 /*********** main body **********/
 .body-container {
     margin-left: 20%;
@@ -129,6 +135,12 @@ body {
     z-index: 5;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 4px 1px 0 rgba(0, 0, 0, 0.19);
 
+}
+
+.slide-show-button {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
 }
 
 .navbar-brand {
@@ -188,4 +200,42 @@ body {
 
 .inner-box h4 {
     font-weight: bolder;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: -12px;
+        background-color: #ffffff;
+        overflow-x: hidden;
+        transition: 0.6s;
+    }
+
+    .slide-show-button {
+        display: block;
+        transition-delay: all 0.4s ease-in;
+    }
+
+    .sidenav .closebtn {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        transition-delay: 2s;
+    }
+
+    .body-container {
+        margin-left: 5px;
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+
+    }
 }

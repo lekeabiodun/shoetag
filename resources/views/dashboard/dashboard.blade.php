@@ -1,5 +1,9 @@
 @extends('layouts.dashboard')
 
+@section('table')
+<a class="navbar-brand text-dark" href="#">DASHBOARD</a>
+@endsection
+
 @section('content')
 <div class="body-page">
     <div class="upper-body row container">
