@@ -1,0 +1,156 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+body
+{
+    overflow-x: hidden;
+}
+.container-fluid
+{
+    display: flex;
+    /* place-content: center; */
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100vh;
+}
+.forgotten-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    background-color: white;
+    width: 50%;
+    height: 40%;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+}
+.forgotten-head{
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.forgotten-subhead
+{
+    text-align: center;
+    font-size: 0.9rem;
+}
+input
+{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 7px;
+    border: none;
+    outline: none;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 4px 0 rgba(0, 0, 0, 0.19);
+}
+input:hover
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+button
+{
+    font-size: ;
+}
+.btn
+{
+    width: 100%;
+    border-radius: 15px;
+}
+a.btn-back
+{
+    width: 100%;
+    border-radius: 15px;
+    background-color: #ffffff;
+    color: #dddada;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+a.btn-back:hover
+{
+    background-color: #ffffff;
+    color: #111010;
+    outline: none;
+    border: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .forgotten-box
+    {
+        width: 50%;
+        height: 50%;
+    }
+    .forgotten-head{
+        text-align: center;
+        font-weight: 800;
+        margin-bottom: 10px;
+        font-size: x-large;
+    }
+    .forgotten-subhead
+    {
+        font-size: 0.7rem;
+    }
+    input
+    {
+        width: 100%;
+        height: 40px;
+    }
+    
+
+}
+@media screen and (max-width: 780px) {
+    .forgotten-head{
+        text-align: center;
+        font-weight: 800;
+        margin-bottom: 10px;
+        font-size: large;
+    }
+    .forgotten-subhead
+    {
+        font-size: 0.7rem;
+    }
+    .forgotten-box
+    {
+        width: 70%;
+        height: 40%;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .forgotten-box
+    {
+        width: 90%;
+        height: 40%;
+    }
+
+}
+@media screen and (max-width: 380px) {
+    .forgotten-box
+    {
+        width: 100%;
+        height: 45%;
+    }
+    .forgotten-subhead
+    {
+        font-size: 0.5rem;
+    }
+    .forgotten-head{
+        text-align: center;
+        font-weight: 800;
+        margin-bottom: 10px;
+        font-size: small;
+    }
+
+}

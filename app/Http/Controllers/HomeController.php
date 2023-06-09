@@ -21,18 +21,12 @@ class HomeController extends Controller
         return view('pages.about');
     }
 
-    public function login()
+    public function blog()
     {
-        return view('loginpage.login');
+        return view('pages.blog');
     }
-
     public function dashboard()
     {
         return view('dashboard.dashboard');
-    }
-
-    public function table()
-    {
-        return view('dashboard.table');
     }
 }

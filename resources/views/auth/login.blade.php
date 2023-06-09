@@ -13,13 +13,18 @@
         <div class="login-box row">
             <div class="login-text col-lg-6 col-xl-6">
                 <h2 class="login-head mt-4" >LOGIN</h2>
-                <form action="" class="mt-3 p-2">
-                    <input type="text" name="Uname" id="Uname" placeholder="Username">
-                    <input type="password" name="pass" id="pass" placeholder="Password" class="mt-2">
+                @if(session('message'))
+                    <span class="text-danger">{{ session('message') }}</span> 
+                @endif
+
+                <form action="{{ url('/login') }}" method="POST" class="mt-3 p-2">
+                    @csrf
+                    <input type="email" name="email" id="email" placeholder="email">
+                    <input type="password" name="password" id="password" placeholder="password" class="mt-2">
                     <button type="submit" class="btn btn-primary mt-3">Login</button>
                     <div class="other">
-                        <p class="mt-2 sign-text">Need an account? <a href="{{ asset('signin') }}">SIGN IN</a> </p>
-                        <a href="{{ asset('Fpassword') }}" class="forgotten">Forgotten Password</a>
+                        <p class="mt-2 sign-text">Need an account? <a href="{{ url('/register') }}">Register</a> </p>
+                        <a href="{{ url('forgot_password') }}" class="forgotten">Forgot Password</a>
                     </div>
                     <div class="login-line m-3">
                         <hr class="mr-2">

@@ -1,4 +1,3 @@
-
 footer
 {
     text-align: center;
@@ -10,4 +9,45 @@ footer
 .footer a
 {
     text-decoration: none;
+}
+.footer-content
+{
+    text-align: left;
+    /* color: #000; */
+    /* height: 20vh; */
+    /* background: #dddddd; */
+}
+.footer-content .content
+{
+    padding: 10px;
+}
+.footer-content .content .inner-content
+{
+    /* background-color: rgb(221, 11, 11); */
+    /* height: 10vh; */
+    width: 100%;
+    padding: 10px;
+    color: #000000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.footer-content .content .inner-content p
+{
+    margin-bottom: 5px;
+    padding: 0;
+}
+.footer-content .content .inner-content input
+{
+    border-radius: 40px;
+    width: 100px;
+    height: 30px;
+    padding: 0px 5px;
+}
+.footer-content .content .inner-content button
+{
+    
+    border-radius: 40px;
+    width: 70px;
+    height: 30px;
+    color: aqua;
+    cursor: pointer;
 }

@@ -17,7 +17,7 @@
     <div class="">
         <nav class="navbar navbar-expand-lg bg-light navbar-light">
             <!-- Brand -->
-            <a class="navbar-brand" href="#">SHOETAGS</a>
+            <a class="navbar-brand" href="{{ asset('/') }}">SHOETAGS</a>
 
             <!-- Toggler/collapsibe Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="outline: none;">
@@ -40,14 +40,14 @@
                         <a class="nav-link" href="{{ asset('/about') }}">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ asset('/contact') }}">CONTACT</a>
+                        <a class="nav-link" href="{{ asset('/contact/create') }}">CONTACT</a>
                     </li>
                 </ul>
                 <div class="login-botton ml-auto">
                     <a href="{{ asset('/login') }}">
                         <button class="btn btn-primary">Login</button>
                     </a>
-                    <a href="#">
+                    <a href="{{ asset('/signin') }}">
                         <button class="btn btn-warning">Sign Up</button>
                     </a>
                 </div>
@@ -57,7 +57,8 @@
             <div class="page-body">
                 @yield('content')
             </div>
-            <footer class="mt-4 footer">
+            <footer class="mt-4 footer container">
+                @yield('footer')
                 <p>2023 © Influence - Designed by <a href="#">Smith</a></p>
             </footer>
         </div>

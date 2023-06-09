@@ -55,7 +55,8 @@
         </div>
         <div class="text-box col-xs-12 col-lg-8 bg-white">
             <h3>Get in touch</h3>
-            <form action="" class="fill-contact">
+            <form action="{{ url('contact/create') }}" method="POST" class="fill-contact">
+                @csrf
                 <div class="fill-space row">
                     <div class="fill-space-name col-sm-12 col-lg-6">
                         <label for="">FULL NAME</label><br>
