@@ -47,13 +47,7 @@ class ShoeController extends Controller
         $path = $validated['image']->store("img", "public");
         $shoe->image = $path;
         $shoe->save();
-
-        // Shoe::create([
-        //     'name' => $request->name,
-        //     'price' => $request->price,
-        //     'brand' => $request->brand,
-        // ]);
-
+        
         return redirect()->to('/dashboard/shoes');
     }
 

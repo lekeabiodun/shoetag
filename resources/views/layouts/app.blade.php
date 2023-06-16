@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/all.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ url('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url('css/all.css') }}">
+    <link rel="stylesheet" href="{{ url('css/style.css') }}">
     @yield('csstyle')
-    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+    <link rel="stylesheet" href="{{ url('css/footer.css') }}">
     <title>Shoe Industry</title>
 </head>
 
@@ -63,11 +63,12 @@
             </footer>
         </div>
     </div>
-    <script src="{{ ('js/jquery.min.js') }}"></script>
-    <script src="{{ ('js/popper.min.js') }}"></script>
-    <script src="{{ ('js/bootstrap.min.js') }}"></script>
-    <script src="{{ ('js/all.js') }}"></script>
-    <script src="{{ ('js/main.js') }}"></script>
+    <script src="{{ url('js/jquery.min.js') }}"></script>
+    <script src="{{ url('js/popper.min.js') }}"></script>
+    <script src="{{ url('js/bootstrap.min.js') }}"></script>
+    <script src="{{ url('js/all.js') }}"></script>
+    <script src="{{ url('js/slider.js') }}"></script>
+    <script src="{{ url('js/main.js') }}"></script>
 </body>
 
 </html>

@@ -5,7 +5,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ShoeController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\dashboardcontroller;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\BlogController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,25 +18,24 @@ use App\Http\Controllers\dashboardcontroller;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'] 
-);
+Route::get('/', [HomeController::class, 'index'] );
 
 Route::get('contact', [ContactController::class, 'index'] );
 Route::get('contact/create', [ContactController::class, 'create'] );
 Route::post('contact/create/', [ContactController::class, 'store']);
 
+Route::get('about', [HomeController::class, 'about'] );
 
-Route::get('about', [HomeController::class, 'about'] 
-);
+Route::get('blog', [BlogController::class, 'index'] );
+Route::get('blog/create', [BlogController::class, 'create'] );
+Route::post('blog/create/', [BlogController::class, 'store'] );
 
-Route::get('blog', [HomeController::class, 'blog'] 
-);
-
-Route::get('login', [App\Http\Controllers\AuthController::class, 'index'])->name('login')->middleware('guest');
-Route::post('login', [App\Http\Controllers\AuthController::class, 'login']);
-Route::get('register', [App\Http\Controllers\AuthController::class, 'register']);
-Route::post('register', [App\Http\Controllers\AuthController::class, 'store']);
-Route::post('logout', [App\Http\Controllers\AuthController::class, 'logout']);
+Route::get('login', [AuthController::class, 'index'])->name('login')->middleware('guest');
+Route::post('login', [AuthController::class, 'login']);
+Route::get('register', [AuthController::class, 'register']);
+Route::post('register', [AuthController::class, 'store']);
+Route::post('logout', [AuthController::class, 'logout']);
+Route::get('forgot_password', [AuthController::class, 'forgottenpassword']);
 
 
 // DASHBOARD
