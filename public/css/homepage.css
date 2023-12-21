@@ -1,0 +1,83 @@
+.homepage-body
+{
+    background-image: url(../img/Download\ Seamless\ Pattern\ with\ Sneaker\ Shoe\ Flat\ Line\ Stroke\ Icon\ for\ free.jfif);
+    background-repeat: no-repeat;
+    /* /* width: 100%; */
+    height: 80vh;
+    background-size: 100% 100%;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+.homepage-body h1
+{
+    color: #2a27ec;
+    font-size: 4rem;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.homepage-body p
+{
+    font-size: xx-large;
+    font-weight: 600;
+    color: #3023ec;
+}
+
+.bomebody
+{
+    background-color: rgb(248, 248, 248);
+    width: 100%;
+    height: 100vh;
+    
+}
+.bomebody h3
+{
+    text-align: center;
+    color: rgb(73, 72, 72);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+    /* background-color: #2a27ec; */
+    cursor: pointer;
+}
+
+.slide-inner
+{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-left: 30px;
+    padding-top: 10px;
+    /* padding: 50px 10px 50px 30px; */
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2), 0 5px 12px 0 rgba(0, 0, 0, 0.19);
+}
+.slide-inner h5
+{
+    text-align: center;
+}
+.carousel-indicators li
+{
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+}
+.carousel-item img
+{
+    width: 100%;
+    height: 300px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.carousel-item img::before
+{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.carousel-item img::after
+{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
