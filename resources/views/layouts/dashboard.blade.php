@@ -21,10 +21,9 @@
             </a>
             <div class="side-nav-text">
                 <a href="{{ url('/dashboard') }}"><i class="fa-solid fa-house mr-2"></i>Dashboard</a>
-                <a href="{{ url('/dashboard/shoes') }}"><i class="fa-solid fa-house mr-2"></i>Table</a>
-                <a href="{{ url('/dashboard/application') }}"><i class="fa-solid fa-house mr-2"></i>Application</a>
+                <!-- <a href="{{ url('/dashboard/shoes') }}"><i class="fa-solid fa-house mr-2"></i>Table</a> -->
                 <a href="#"></a>
-                <button class="dropdown-btn"><i class="fa-solid fa-house mr-2"></i>Page
+                <button class="dropdown-btn"><i class="fa-solid fa-bars mr-2"></i></i>Product
                     <i class="fa fa-caret-down"></i>
                 </button>
                 <div class="dropdown-container">
@@ -35,31 +34,36 @@
 
                     </div>
                 </div>
-                <a href="#"><i class="fa-solid fa-house mr-2"></i>Contact</a>
+                <a href="{{ url('/dashboard/application') }}"><i class="fa-solid fa-users mr-2"></i>Users</a>
+                <a href="#"><i class="fa-solid fa-phone mr-2"></i></i>Contact</a>
+                <a href="#"><i class="fa-solid fa-gear mr-2"></i>Settings</a>
             </div>
         </div>
-        <div id="mySidenav" class="sidenav pt-4 pl-3 media-display">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="{{ url('/dashboard') }}">
-                <h2 class="sidenav-header">SHOETAGS</h2>
-            </a>
-            <div class="side-nav-text">
-                <a href="{{ url('/dashboard') }}"><i class="fa-solid fa-house mr-2"></i>Dashboard</a>
-                <a href="{{ url('/dashboard/shoes') }}"><i class="fa-solid fa-house mr-2"></i>Table</a>
-                <a href="{{ url('/dashboard/application') }}"><i class="fa-solid fa-house mr-2"></i>Application</a>
-                <a href="#"></a>
-                <button class="dropdown-btn"><i class="fa-solid fa-house mr-2"></i>Page
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-container">
-                    <div class="dropdown-contain">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-
+        <div id="mySidenav" class="sidenav pl-1 media-display">
+            <div class="pt-5 pl-3" style="height: 100vh;">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="{{ url('/dashboard') }}">
+                    <h2 class="sidenav-header">SHOETAGS</h2>
+                </a>
+                <div class="side-nav-text">
+                    <a href="{{ url('/dashboard') }}"><i class="fa-solid fa-house mr-2"></i>Dashboard</a>
+                    <!-- <a href="{{ url('/dashboard/shoes') }}"><i class="fa-solid fa-house mr-2"></i>Table</a> -->
+                    <a href="#"></a>
+                    <button class="dropdown-btn"><i class="fa-solid fa-bars mr-2"></i></i>Product
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <div class="dropdown-contain">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+    
+                        </div>
                     </div>
+                    <a href="{{ url('/dashboard/application') }}"><i class="fa-solid fa-users mr-2"></i>Users</a>
+                    <a href="#"><i class="fa-solid fa-phone mr-2"></i></i>Contact</a>
+                    <a href="#"><i class="fa-solid fa-gear mr-2"></i>Settings</a>
                 </div>
-                <a href="#"><i class="fa-solid fa-house mr-2"></i>Contact</a>
             </div>
         </div>
         <div class="body-container">
