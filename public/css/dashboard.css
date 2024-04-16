@@ -15,6 +15,7 @@ body {
     width: 100%;
 }
 
+
 /************************************* DASHBOARD ***********************************/
 /********** sidenav **********/
 .sidenav {
@@ -119,7 +120,13 @@ body {
     padding-right: 8px;
 }
 
-
+.logout-btn
+{
+    margin-top: 20px;
+    width: 90%;
+    color: #ffffff;
+    font-weight: 600;
+}
 
 /*********** main body **********/
 .body-container {

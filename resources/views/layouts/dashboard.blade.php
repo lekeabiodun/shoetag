@@ -34,9 +34,15 @@
 
                     </div>
                 </div>
-                <a href="{{ url('/dashboard/application') }}"><i class="fa-solid fa-users mr-2"></i>Users</a>
+                <a href="{{ url('/dashboard/users') }}"><i class="fa-solid fa-users mr-2"></i>Users</a>
                 <a href="#"><i class="fa-solid fa-phone mr-2"></i></i>Contact</a>
                 <a href="#"><i class="fa-solid fa-gear mr-2"></i>Settings</a>
+            </div>
+            <div class="ml-auto">
+                <form action="{{ url('/logout') }}" method="POST">
+                    @csrf
+                    <button type="submit" class="btn btn-danger logout-btn">Logout</button>
+                </form>
             </div>
         </div>
         <div id="mySidenav" class="sidenav pl-1 media-display">
@@ -57,26 +63,26 @@
                             <a href="#">Link 1</a>
                             <a href="#">Link 2</a>
                             <a href="#">Link 3</a>
-    
+
                         </div>
                     </div>
-                    <a href="{{ url('/dashboard/application') }}"><i class="fa-solid fa-users mr-2"></i>Users</a>
+                    <a href="{{ url('/dashboard/users') }}"><i class="fa-solid fa-users mr-2"></i>Users</a>
                     <a href="#"><i class="fa-solid fa-phone mr-2"></i></i>Contact</a>
                     <a href="#"><i class="fa-solid fa-gear mr-2"></i>Settings</a>
                 </div>
+                <div class="ml-auto">
+                    <form action="{{ url('/logout') }}" method="POST">
+                        @csrf
+                        <button type="submit" class="btn btn-danger logout-btn">Logout</button>
+                    </form>
+                </div>
+
             </div>
         </div>
         <div class="body-container">
             <nav class="navbar navbar-expand-sm bg-white navbar-dark">
                 <span class="slide-show-button mr-1" onclick="openNav()">&#9776;</span>
                 @yield('header')
-                @yield('logout_button')
-                <!-- <div class="profile ml-auto">
-                    <div class="profile-image">
-                        <img src="{{ url('img/shoe.png') }}" alt="">
-                    </div>
-                </div> -->
-
             </nav>
             @yield('content')
             <footer class="mt-4 footer">

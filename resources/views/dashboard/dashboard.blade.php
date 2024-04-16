@@ -4,15 +4,6 @@
 <a class="navbar-brand text-dark" href="#">DASHBOARD</a>
 @endsection
 
-@section('logout_button')
-<div class="ml-auto">
-    <form action="{{ url('/logout') }}" method="POST">
-        @csrf
-        <button type="submit" class="btn btn-warning">Logout</button>
-    </form>
-</div>
-@endsection
-
 @section('content')
 <div class="body-page">
     <div class="upper-body row container-fluid pb-3 pr-3">
