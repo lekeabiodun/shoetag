@@ -28,7 +28,7 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ asset('/') }}">HOME</a>
+                        <a class="nav-link text-black" href="{{ asset('/') }}">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ asset('/servcie') }}">SERVICES</a>
