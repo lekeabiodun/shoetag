@@ -26,9 +26,15 @@ body
 {
     outline: none;
 }
+a
+{
+    text-decoration: none;
+}
 .navbar-nav .nav-link {
-    color: brown;
-    font-family: fantasy;
+    /* color: rgb(0, 0, 0); */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    /* background-color: blue; */
 }
 
 .login-botton .btn {

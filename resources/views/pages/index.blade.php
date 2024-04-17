@@ -10,6 +10,7 @@
         <h1>SHOES COLLECTION</h1>
         <P>New Trending Shoes</P>
     </div>
+    <div class="homepage-img"></div>
 
 </div>
 
