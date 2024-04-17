@@ -1,0 +1,90 @@
+.contentt
+{
+    background-color: #fff;
+    padding: 10px;
+}
+.sectiiom
+{
+    text-transform: capitalize;
+}
+.sectiom h3
+{
+    font-weight: 600;
+}
+.sectiom-box p
+{
+    color: #0000007D;
+    font-weight: 500
+}
+.dropdown
+{
+    color: ;
+}
+.dropdown-toggle
+{
+    background-color: #fff;
+    color: #0000007D;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: larger;
+}
+.dropdown-toggle span
+{
+    color: black;
+}
+.header-box
+{
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    /* background-color: red; */
+}
+.see-all
+{
+    cursor: pointer;
+    background-color: #fff;
+    width: 100px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.boxs-houses .box
+{
+    width: 100%;
+    height: 100%;
+    /* background-color: #000; */
+    gap: 20px;
+}
+img
+{
+    width: 100%;
+    height: 260px;
+    cursor: zoom-in;
+    border-radius: 60px;
+}
+.image-text
+{
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: red; */
+    height: 30px;
+    text-transform: capitalize;
+}
+.image-figure
+{
+    font-weight: 600;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+}
+.one-box .btn-one-2
+{
+    background-color: #5852FE;
+    width: 100%;
+    border-radius: 10px;
+    /* margin-left: 8%; */
+    font-weight: 600;
+    color: #fff;
+    text-transform: capitalize;
+}

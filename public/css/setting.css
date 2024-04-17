@@ -1,0 +1,187 @@
+.content {
+    width: auto;
+    background-color: #fff;
+}
+
+.section {
+    /* width: 100%; */
+}
+
+.content-body {
+    width: 60%;
+    /* background-color: aqua; */
+    height: 100%;
+}
+
+.uppertext {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.lowertext {
+    color: #00000078;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+.ciricle {
+    width: 200px;
+    height: 200px;
+    background-color: #D9D9D9;
+    border-radius: 100%;
+}
+.ciricle img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 1005%;
+}
+
+form label {
+    font-size: 1.1rem;
+}
+
+form input {
+    background-color: #D9D9D96B;
+    width: 80%;
+    border-radius: 10px 0 0 10px;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    border: none;
+    outline: none;
+}
+
+form .edit-bttn {
+    color: #5852FE;
+    height: 40px;
+    border-radius: 0px 10px 10px 0px;
+    width: 15%;
+    text-transform: capitalize;
+    font-weight: 600;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin: 0;
+}
+form .edit-bttn:hover {
+    background-color: #5852FE;
+    color: #ffffff;
+    transition-duration: 0.4s;
+}
+.down-button
+{
+    /* background-color: #fa0303; */
+    padding-left: 20px;
+}
+.save {
+    background-color: #5852FE;
+    color: #fff;
+    width: 90%;
+    height: 40px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.logout-button {
+    background-color: #5852FE;
+    color: #fff;
+    width: 90%;
+    height: 40px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .content-body {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 767px) {
+
+    .content-body {
+        width: 90%;
+    }
+    .down-button
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* align-self: center;
+        text-align: center; */
+    }
+
+    .save {
+        width: 95%;
+        height: 40px;
+    }
+
+    .logout-button {
+        width: 95%;
+        height: 40px;
+
+    }
+}
+@media screen and (max-width: 425px) {
+
+    .section
+    {
+    /* margin-left: -5px; */
+
+    }
+    .content-body {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        text-align: center;
+        /* background-color: #ff0000; */
+        width: 100%;
+    }
+
+    .ciricle {
+        width: 150px;
+        height: 150px;
+    }
+
+    form label {
+        display: flex;
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+    form input {
+        background-color: #c407076b;
+        width: 83%;
+        border-radius: 10px 0 0 10px;
+        height: 40px;
+        margin-bottom: 10px;
+        padding: 0 15px;
+    }
+
+    .save {
+        width: 90%;
+        height: 40px;
+    }
+
+    .logout-button {
+        width: 90%;
+        height: 40px;
+
+    }
+}

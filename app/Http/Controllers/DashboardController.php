@@ -28,4 +28,34 @@ class DashboardController extends Controller
 
         ]);
     }
+    
+    public function contact()
+    {
+        return view('dashboard.contact');
+    }
+    
+    public function setting()
+    {
+        return view('dashboard.setting');
+    }
+    public function productheels()
+    {
+        return view('dashboard.product.heels');
+    }
+    public function productsneakers()
+    {
+        return view('dashboard.product.sneakers');
+    }
+    public function productboots()
+    {
+        return view('dashboard.product.boots');
+    }
+    public function productshoes()
+    {
+        return view('dashboard.product.shoes');
+    }
+    public function productshow()
+    {
+        return view('dashboard.product.shoes');
+    }
 }

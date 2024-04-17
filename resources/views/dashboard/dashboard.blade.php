@@ -1,5 +1,9 @@
 @extends('layouts.dashboard')
 
+@section('style')
+<link rel="stylesheet" href="{{ url('css/dashboard.css') }}">
+@endsection
+
 @section('header')
 <a class="navbar-brand text-dark" href="#">DASHBOARD</a>
 @endsection
