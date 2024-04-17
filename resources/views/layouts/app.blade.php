@@ -47,7 +47,7 @@
                     <a href="{{ asset('/login') }}">
                         <button class="btn btn-primary">Login</button>
                     </a>
-                    <a href="{{ asset('/signin') }}">
+                    <a href="{{ asset('/register') }}">
                         <button class="btn btn-warning">Sign Up</button>
                     </a>
                 </div>

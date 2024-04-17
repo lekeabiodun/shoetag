@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url('css/all.css') }}">
     <link rel="stylesheet" href="{{ asset('css/sign.css') }}">
     <title>SIGNIN</title>
 </head>
+
 <body>
     <div class="container-fluid">
         <div class="login-box row">
             <div class="col-lg-6 col-xl-6">
-                <img src="{{ url('img/shoe.png') }}" alt="" class="login-img">
+                <a href="/"><i class="fa-solid fa-arrow-left fa-1x"></i></a>
+                <img src="{{ url('img/boot/boot (11).jpeg') }}" alt="" class="login-img">
             </div>
             <div class="login-text col-lg-6 col-xl-6">
-                <h2 class="login-head mt-3" >Register</h2>
+
+                <h2 class="login-head mt-3">Register</h2>
                 <form action="{{ url('/register') }}" method="POST" class="mt-3 p-3">
                     @csrf
                     <input type="text" name="name" value="{{ old('name') }}" id="name" placeholder="Name" class="mt-3">
@@ -32,5 +37,11 @@
             </div>
         </div>
     </div>
+
+    <script src="{{ url('js/jquery.min.js') }}"></script>
+    <script src="{{ url('js/popper.min.js') }}"></script>
+    <script src="{{ url('js/bootstrap.min.js') }}"></script>
+    <script src="{{ url('js/all.js') }}"></script>
 </body>
+
 </html>

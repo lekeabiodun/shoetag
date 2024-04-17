@@ -34,6 +34,7 @@ Route::get('login', [AuthController::class, 'index'])->name('login')->middleware
 Route::post('login', [AuthController::class, 'login']);
 Route::get('register', [AuthController::class, 'register']);
 Route::post('register', [AuthController::class, 'store']);
+// Route::get('dashboard/users', [AuthController::class, 'users']);
 Route::post('logout', [AuthController::class, 'logout']);
 Route::get('forgot_password', [AuthController::class, 'forgottenpassword']);
 
@@ -41,7 +42,13 @@ Route::get('forgot_password', [AuthController::class, 'forgottenpassword']);
 // DASHBOARD
 
 Route::get('dashboard', [DashboardController::class, 'dashboard'])->middleware('auth');
-Route::get('dashboard/application', [DashboardController::class, 'application'])->middleware('auth');
+Route::get('dashboard/users', [DashboardController::class, 'users'])->middleware('auth');
+Route::get('dashboard/contact', [DashboardController::class, 'contact'])->middleware('auth');
+Route::get('dashboard/setting', [DashboardController::class, 'setting'])->middleware('auth');
+Route::get('dashboard/product/heels', [DashboardController::class, 'productheels'])->middleware('auth');
+Route::get('dashboard/product/sneakers', [DashboardController::class, 'productsneakers'])->middleware('auth');
+Route::get('dashboard/product/boots', [DashboardController::class, 'productboots'])->middleware('auth');
+Route::get('dashboard/product/shoes', [DashboardController::class, 'productshoes'])->middleware('auth');
 Route::get('dashboard/shoes', [ShoeController::class, 'index'])->middleware('auth');
 Route::get('dashboard/shoes/create', [ShoeController::class, 'create'])->middleware('auth');
 Route::post('dashboard/shoes/', [ShoeController::class, 'store'])->middleware('auth');
