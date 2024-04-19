@@ -19,7 +19,7 @@
                 </div>
                 <div class=" sm:ml-6 sm:block hidden ">
                     <div class="flex space-x-4">
-                        <x-links />
+                        <x-navlinks />
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
 
     <div class="sm:hidden hidden absolute md:top-[-100%] top-[9%] bg-gray-900 w-full" id="mobile-menu">
         <ul class="space-y-1 px-2 pb-3 pt-2 flex flex-col">
-            <x-links />
+            <x-navlinks />
         </ul>
     </div>
 </nav>
