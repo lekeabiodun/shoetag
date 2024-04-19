@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <title>Shoe Industry</title>
 </head>
 
@@ -25,17 +26,15 @@
                 Profile.style.display = 'flex'
             }
         }
-        function showNavbar() {
-            const navLinks = document.getElementById('mobile-menu')
+        function onToggleMenu(e){
+            const navLinks = document.querySelector('.nav-links')
+            e.name = e.name === 'menu' ? 'close' : 'menu'
             if (navLinks.style.display == 'flex') {
                 navLinks.style.display = 'none'
             }else{
                 navLinks.style.display = 'flex'
             }
         }
-        // function hideNavbar() {
-        //     const navLinks = document.querySelector('.nav-links')
-        // }
     </script>
 </body>
 
