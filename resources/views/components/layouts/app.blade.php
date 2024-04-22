@@ -10,7 +10,7 @@
     <title>Shoe Industry</title>
 </head>
 
-<body class="bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-screen">
+<body class="">
     <main>
         <x-navbar />
         {{ $slot }}
@@ -22,19 +22,50 @@
             const Profile = document.querySelector('.profile')
             if (Profile.style.display == 'flex') {
                 Profile.style.display = 'none'
-            }else{
+            } else {
                 Profile.style.display = 'flex'
             }
         }
-        function onToggleMenu(e){
+
+        function toggleNavbar() {
             const navLinks = document.querySelector('.nav-links')
-            e.name = e.name === 'menu' ? 'close' : 'menu'
             if (navLinks.style.display == 'flex') {
                 navLinks.style.display = 'none'
-            }else{
+            } else {
                 navLinks.style.display = 'flex'
             }
         }
+
+        function showAll() {
+            document.getElementById('heels').style.display = "grid",document.getElementById('shoes').style.display = "grid"
+
+        }
+
+        function showShoe() {
+            if (document.getElementById('shoes').style.display = "none") {
+                document.getElementById('shoes').style.display = "grid", document.getElementById('heels').style.display = "none"
+            } else {
+                document.getElementById('heels').style.display = "none"
+            }
+        }
+
+        function showHeels() {
+            if (document.getElementById('heels').style.display = "none") {
+                document.getElementById('heels').style.display = "grid", document.getElementById('shoes').style.display = "none"
+            } else {
+                document.getElementById('shoes').style.display = "none"
+            }
+        }
+
+        // function onToggleMenu(e){
+        //     const navLinks = document.querySelector('.nav-links')
+        //     e.name = e.name === 'menu' ? 'close' : 'menu'
+        //     if (navLinks.style.display == 'flex') {
+        //         navLinks.style.display = 'none'
+        //     }else{
+        //         navLinks.style.display = 'flex'
+        //     }
+        // }
     </script>
 </body>
 

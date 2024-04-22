@@ -1,6 +1,6 @@
 <x-layouts.app>
     <div class="">
-        <section>
+        <section class="bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-screen">
             <div class="search flex flex-col justify-center items-center w-full h-[90vh] px-2">
                 <h1 class="font-bold md:text-[80px] text-[50px] text-gray-900 mb-3 font-mono">SHOETAG</h1>
                 <form method="" class=" md:max-w-2xl sm:max-w-md max-w-sm mx-auto w-full">
@@ -12,14 +12,15 @@
                             </svg>
 
                         </div>
-                        <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-50 border border-gray-300 rounded-2xl bg-gray-50 focus:ring-blue-800 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-50 dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none z-[0]" placeholder="Search..." required />
+                        <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-50 border border-gray-300 rounded-2xl bg-white bg-gray-50 focus:ring-blue-800 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-50 dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none z-[0]" placeholder="Search..." required />
                         <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             <svg class="w-4 h-4 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                            </svg></button>
+                            </svg>
+                        </button>
                     </div>
                 </form>
-                <div class="social-icons flex flex-row gap-3 mt-3 max:justify-center max:mt-2">
+                <!-- <div class="social-icons flex flex-row gap-3 mt-3 max:justify-center max:mt-2">
                     <div class="facebook">
                         <a href="#" class="fill-gray-900 hover:fill-gray-800">
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48" class="sm:w-10 sm:h-10 w-7 h-7 cursor-pointer ">
@@ -91,8 +92,73 @@
 
                         </a>
                     </div>
-                </div>
+                </div> -->
+
+                
             </div>
         </section>
+        <div class="flex whitespace-nowrap items-center justify-center py-4 md:py-8">
+            <button type="button" class=" px-5 py-2.5 text-center me-3 mb-3 font-bold bg-white border-[2px] rounded-full focus:bg-gray-400 focus:text-white active [&.active]:bg-blue-400"  onclick="showAll()">All categories</button>
+            <button type="button" class=" px-5 py-2.5 text-center me-3 mb-3 font-bold bg-white border-[2px] rounded-full focus:bg-gray-400 focus:text-white" onclick="showShoe()">Heels</button>
+            <button type="button" class=" px-5 py-2.5 text-center me-3 mb-3 font-bold bg-white border-[2px] rounded-full focus:bg-gray-400 focus:text-white" onclick="showHeels()">Shoes</button>
+        </div>
+        <div class="">
+            <div id="shoes" class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 gap-3 mb-7 px-5 gallery">
+                <div class="px-2 py-2 cursor-pointer duration-300 shadow hover:shadow-xl rounded-2xl bg-white">
+                    <img src="{{ url('img/heels/heel (4).jpeg') }}" alt="" class="w-full h-[250px] rounded-xl">
+                    <h1 class="pt-1 text-xl">Heels</h1>
+                    <p class="font-bold text-[30px]">$12,000</p>
+                </div>
+                <div class="px-2 py-2 cursor-pointer duration-300 shadow hover:shadow-xl rounded-2xl bg-white">
+                    <img src="{{ url('img/heels/heel (3).jpeg') }}" alt="" class="w-full h-[250px] rounded-xl">
+                    <h1 class="pt-1 text-xl">Heels</h1>
+                    <p class="font-bold text-[30px]">$12,000</p>
+                </div>
+                <div class="px-2 py-2 cursor-pointer duration-300 shadow hover:shadow-xl rounded-2xl bg-white">
+                    <img src="{{ url('img/heels/heel (2).jpeg') }}" alt="" class="w-full h-[250px] rounded-xl">
+                    <h1 class="pt-1 text-xl">Heels</h1>
+                    <p class="font-bold text-[30px]">$12,000</p>
+                </div>
+                <div class="px-2 py-2 cursor-pointer duration-300 shadow hover:shadow-xl rounded-2xl bg-white">
+                    <img src="{{ url('img/heels/heel (6).jpeg') }}" alt="" class="w-full h-[250px] rounded-xl">
+                    <h1 class="pt-1 text-xl">Heels</h1>
+                    <p class="font-bold text-[30px]">$12,000</p>
+                </div>
+                <div class="px-2 py-2 cursor-pointer duration-300 shadow hover:shadow-xl rounded-2xl bg-white">
+                    <img src="{{ url('img/heels/heel (12).jpeg') }}" alt="" class="w-full h-[250px] rounded-xl">
+                    <h1 class="pt-1 text-xl">Heels</h1>
+                    <p class="font-bold text-[30px]">$12,000</p>
+                </div>
+            </div>
+            <div id="heels" class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 gap-3 mb-7 px-3 gallery">
+                <div class="px-2 py-2 cursor-pointer duration-300 shadow hover:shadow-xl rounded-2xl bg-white md:block">
+                    <img src="{{ url('img/sneakers/sneakers (9).jpeg') }}" alt="" class="w-full h-[250px] rounded-xl">
+                    <h1 class="pt-1 text-xl">Sneakers</h1>
+                    <p class="font-bold text-[30px]">$12,000</p>
+                </div>
+                <div class="px-2 py-2 cursor-pointer duration-300 shadow hover:shadow-xl rounded-2xl bg-white md:block">
+                    <img src="{{ url('img/sneakers/sneakers (2).jpeg') }}" alt="" class="w-full h-[250px] rounded-xl">
+                    <h1 class="pt-1 text-xl">Sneakers</h1>
+                    <p class="font-bold text-[30px]">$12,000</p>
+                </div>
+                <div class="px-2 py-2 cursor-pointer duration-300 shadow hover:shadow-xl rounded-2xl bg-white md:block">
+                    <img src="{{ url('img/sneakers/sneakers (3).jpeg') }}" alt="" class="w-full h-[250px] rounded-xl">
+                    <h1 class="pt-1 text-xl">Sneakers</h1>
+                    <p class="font-bold text-[30px]">$12,000</p>
+                </div>
+                <div class="px-2 py-2 cursor-pointer duration-300 shadow hover:shadow-xl rounded-2xl bg-white md:block">
+                    <img src="{{ url('img/sneakers/sneakers (11).jpeg') }}" alt="" class="w-full h-[250px] rounded-xl">
+                    <h1 class="pt-1 text-xl">Sneakers</h1>
+                    <p class="font-bold text-[30px]">$12,000</p>
+                </div>
+                <div class="px-2 py-2 cursor-pointer duration-300 shadow hover:shadow-xl rounded-2xl bg-white md:block">
+                    <img src="{{ url('img/sneakers/sneakers (8).jpeg') }}" alt="" class="w-full h-[250px] rounded-xl">
+                    <h1 class="pt-1 text-xl">Sneakers</h1>
+                    <p class="font-bold text-[30px]">$12,000</p>
+                </div>
+            </div>
+        </div>
+        
+        
     </div>
 </x-layouts.app>
