@@ -6,18 +6,12 @@
                 <form method="" class=" md:max-w-2xl sm:max-w-md max-w-sm mx-auto w-full">
                     <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
                     <div class="relative">
-                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5v10M3 5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm12 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0V6a3 3 0 0 0-3-3H9m1.5-2-2 2 2 2" />
-                            </svg>
-
-                        </div>
-                        <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-50 border border-gray-300 rounded-2xl bg-white bg-gray-50 focus:ring-blue-800 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-50 dark:focus:ring-blue-500 dark:focus:border-blue-500 outline-none z-[0]" placeholder="Search..." required />
-                        <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                            <svg class="w-4 h-4 text-white dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none items-center">
+                            <svg class="w-6 h-6 text-gray-600 dark:text-gray-600 font-bold" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
                             </svg>
-                        </button>
+                        </div>
+                        <input type="search" id="default-search" class="block w-full p-4 ps-12 h-19 text-[20px] text-gray-900 rounded-[10px] bg-white bg-white-50 shadow-xl dark:bg-white-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-900 items-center outline-none z-[0] font-bold " placeholder="Search any product" required />
                     </div>
                 </form>
                 <!-- <div class="social-icons flex flex-row gap-3 mt-3 max:justify-center max:mt-2">
@@ -98,9 +92,9 @@
             </div>
         </section>
         <div class="flex whitespace-nowrap items-center justify-center py-4 md:py-8">
-            <button type="button" class=" px-5 py-2.5 text-center me-3 mb-3 font-bold bg-white border-[2px] rounded-full focus:bg-gray-400 focus:text-white active [&.active]:bg-blue-400"  onclick="showAll()">All categories</button>
-            <button type="button" class=" px-5 py-2.5 text-center me-3 mb-3 font-bold bg-white border-[2px] rounded-full focus:bg-gray-400 focus:text-white" onclick="showShoe()">Heels</button>
-            <button type="button" class=" px-5 py-2.5 text-center me-3 mb-3 font-bold bg-white border-[2px] rounded-full focus:bg-gray-400 focus:text-white" onclick="showHeels()">Shoes</button>
+            <button type="button" class=" px-5 py-2.5 text-white text-center me-3 mb-3 font-bold border-[2px] rounded-full active current:bg-blue-400 content" id="all" onclick="showAll()">All categories</button>
+            <button type="button" class=" px-5 py-2.5 text-center me-3 mb-3 font-bold border-[2px] rounded-full" id="shoe" onclick="showShoe()" >Heels</button>
+            <button type="button" class=" px-5 py-2.5 text-center me-3 mb-3 font-bold border-[2px] rounded-full" id="heel" onclick="showHeels()">Shoes</button>
         </div>
         <div class="">
             <div id="shoes" class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 gap-3 mb-7 px-5 gallery">
