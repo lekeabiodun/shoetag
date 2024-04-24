@@ -10,7 +10,7 @@
     <title>Shoe Industry</title>
 </head>
 
-<body class="bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-screen">
+<body class="">
     <main>
         <x-navbar />
         {{ $slot }}
@@ -18,23 +18,100 @@
     </main>
 
     <script>
+        var heelbutton = document.getElementById("heel");
+        var shoebutton = document.getElementById("shoe");
+        var allbutton = document.getElementById("all");
+        var shoediv = document.getElementById('shoes');
+        var heeldiv = document.getElementById('heels');
+        const Profile = document.querySelector('.profile')
+        const navLinks = document.querySelector('.nav-links')
+
         function showProfile() {
-            const Profile = document.querySelector('.profile')
             if (Profile.style.display == 'flex') {
                 Profile.style.display = 'none'
-            }else{
+            } else {
                 Profile.style.display = 'flex'
             }
         }
-        function onToggleMenu(e){
-            const navLinks = document.querySelector('.nav-links')
-            e.name = e.name === 'menu' ? 'close' : 'menu'
+
+        function toggleNavbar() {
             if (navLinks.style.display == 'flex') {
                 navLinks.style.display = 'none'
-            }else{
+            } else {
                 navLinks.style.display = 'flex'
             }
         }
+
+        function showAll() {
+            if (shoediv.style.display = "none", allbutton.style.background = "white") {
+                heeldiv.style.display = "grid",
+                    shoediv.style.display = "grid",
+                    allbutton.style.background = "rgb(96 165 250)"
+                allbutton.style.color = "white"
+                shoebutton.style.color = "black"
+                heelbutton.style.color = "black"
+                shoebutton.style.background = "white"
+                heelbutton.style.background = "white"
+            } else {
+                shoediv.style.display = "none"
+                allbutton.style.color = "black"
+                shoebutton.style.color = "white"
+                heelbutton.style.color = "white"
+            }
+        }
+
+        function showShoe() {
+            if (shoediv.style.display = "none", shoebutton.style.background = "white", shoebutton.style.color = "black") {
+                shoediv.style.display = "grid",
+                    heeldiv.style.display = "none",
+                    allbutton.style.background = "white",
+                    shoebutton.style.background = "rgb(96 165 250)"
+                allbutton.style.color = "black"
+                shoebutton.style.color = "white"
+                heelbutton.style.color = "black"
+                heelbutton.style.background = "white"
+            } else {
+                heeldiv.style.display = "none",
+                    shoebutton.style.background = "white"
+                heelbutton.style.background = "rgb(96 165 250)"
+                allbutton.style.color = "white"
+                shoebutton.style.color = "black"
+                heelbutton.style.color = "white"
+            }
+        }
+
+        function showHeels() {
+            if (heeldiv.style.display = "none", document.getElementById("heels").style.background = "white", heelbutton.style.color = "black") {
+                heeldiv.style.display = "grid",
+                    shoediv.style.display = "none",
+                    allbutton.style.background = "white",
+                    heelbutton.style.background = "rgb(96 165 250)"
+                allbutton.style.color = "black"
+                shoebutton.style.background = "white"
+                allbutton.style.color = "black"
+                shoebutton.style.color = "black"
+                heelbutton.style.color = "white"
+            } else {
+                shoediv.style.display = "none"
+                heelbutton.style.background = "white"
+                shoebutton.style.background = "rgb(96 165 250)"
+                allbutton.style.color = "white"
+                shoebutton.style.color = "white"
+                heelbutton.style.color = "black"
+            }
+        }
+        // function showHeels() {
+        //     document.getElementsByClassName("active").current = 'false';
+        // }
+        // function onToggleMenu(e){
+        //     const navLinks = document.querySelector('.nav-links')
+        //     e.name = e.name === 'menu' ? 'close' : 'menu'
+        //     if (navLinks.style.display == 'flex') {
+        //         navLinks.style.display = 'none'
+        //     }else{
+        //         navLinks.style.display = 'flex'
+        //     }
+        // }
     </script>
 </body>
 
