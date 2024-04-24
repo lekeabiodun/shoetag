@@ -91,10 +91,10 @@
                 
             </div>
         </section>
-        <div class="flex whitespace-nowrap items-center justify-center py-4 md:py-8">
-            <button type="button" class=" px-5 py-2.5 text-white text-center me-3 mb-3 font-bold border-[2px] rounded-full active current:bg-blue-400 content" id="all" onclick="showAll()">All categories</button>
-            <button type="button" class=" px-5 py-2.5 text-center me-3 mb-3 font-bold border-[2px] rounded-full" id="shoe" onclick="showShoe()" >Heels</button>
-            <button type="button" class=" px-5 py-2.5 text-center me-3 mb-3 font-bold border-[2px] rounded-full" id="heel" onclick="showHeels()">Shoes</button>
+        <div class="flex whitespace-nowrap items-center justify-center py-4 md:py-8 px-3">
+            <button type="button" class="xs:px-5 xs:py-2.5 px-3 py-2 text-white text-center me-3 mb-3 font-bold border-[2px] rounded-full active current:bg-blue-400 content" id="all" onclick="showAll()">All categories</button>
+            <button type="button" class="xs:px-5 xs:py-2.5 px-3 py-2 text-center me-3 mb-3 font-bold border-[2px] rounded-full" id="shoe" onclick="showShoe()" >Heels</button>
+            <button type="button" class="xs:px-5 xs:py-2.5 px-3 py-2 text-center me-3 mb-3 font-bold border-[2px] rounded-full" id="heel" onclick="showHeels()">Shoes</button>
         </div>
         <div class="">
             <div id="shoes" class="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 xs:grid-cols-2 gap-3 mb-7 px-5 gallery">
