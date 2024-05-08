@@ -4,29 +4,74 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
 class HomeController extends Controller
 {
+
+
+    /**
+     * Display a listing of the resource.
+     */
     public function index()
     {
         return view('pages.index');
     }
-    
-    public function contact()
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
     {
-        return view('pages.contact');
+
     }
 
-    public function about()
+    /**
+     * Store a newly created resource in storage.
+     */
+    public function store(Request $request)
     {
-        return view('pages.about');
+
     }
 
-    public function blog()
+    /**
+     * Display the specified resource.
+     */
+    public function show(string $id)
     {
-        return view('pages.blog');
+        //
     }
-    public function dashboard()
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(string $id)
     {
-        return view('dashboard.dashboard');
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, string $id)
+    {
+        //
+    }
+
+    public function deleteindex(string $id)
+    {
+
+    }
+    public function destroy(Request $request, string $id)
+    {
+
+    }
+
+    public function heelproduct()
+    {
+        return view('components.products-details.heelproduct');
+    }
+    public function sneakerproduct()
+    {
+        return view('components.products-details.sneakerproduct');
     }
 }

@@ -19,6 +19,8 @@ use App\Http\Controllers\BlogController;
 */
 
 Route::get('/', [HomeController::class, 'index'] );
+Route::get('/heelproductdetails', [HomeController::class, 'heelproduct'] );
+Route::get('/sneakerproductdetails', [HomeController::class, 'sneakerproduct'] );
 
 Route::get('contact', [ContactController::class, 'index'] );
 Route::get('contact/create', [ContactController::class, 'create'] );

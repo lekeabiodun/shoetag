@@ -47,11 +47,11 @@
                 heeldiv.style.display = "grid",
                     shoediv.style.display = "grid",
                     allbutton.style.background = "rgb(96 165 250)"
-                allbutton.style.color = "white"
-                shoebutton.style.color = "black"
-                heelbutton.style.color = "black"
-                shoebutton.style.background = "white"
-                heelbutton.style.background = "white"
+                    shoebutton.style.background = "white"
+                    heelbutton.style.background = "white"
+                    allbutton.style.color = "white"
+                    shoebutton.style.color = "black"
+                    heelbutton.style.color = "black"
             } else {
                 shoediv.style.display = "none"
                 allbutton.style.color = "black"
@@ -100,6 +100,8 @@
                 heelbutton.style.color = "black"
             }
         }
+
+
         // function showHeels() {
         //     document.getElementsByClassName("active").current = 'false';
         // }
